@@ -35,10 +35,17 @@ This repository includes an implementation the second project of the Udacity cou
 4. Enable logging
 
    We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](../logs.py).
+   <br></br>
    
    *Logs*
    ![image](../screenshots/logs.png)
 5. Swagger Documentation
+
+   We now consume the model endpoint with Swagger to generate documentation on its usage.
+   <br></br>
+   
+   *Swagger running on localhost*
+   ![image](../screenshots/swagger.png)
 6. Consume model endpoints
 7. Create and publish a pipeline
 
