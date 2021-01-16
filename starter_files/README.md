@@ -30,7 +30,14 @@ This repository includes an implementation the second project of the Udacity cou
    *Best model*
    ![image](../screenshots/best_model.png)
 3. Deploy the best model
+
+   We now deploy the best model AutoML has found using a Azure Container Instance. We enable authentication.
 4. Enable logging
+
+   We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](../logs.py).
+   
+   *Logs*
+   ![image](../screenshots/logs.png)
 5. Swagger Documentation
 6. Consume model endpoints
 7. Create and publish a pipeline
