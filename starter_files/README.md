@@ -10,19 +10,31 @@ This repository includes an implementation the second project of the Udacity cou
 1. Authentication
    
    Since the project is implemented on a personal Azure account, we can include an  automated authentication step by creating of a service principal. This is an isolated step      that is not used in the remainder of the project.
+   <pre>
    
+   
+   </pre>
    *Creation of the service principal*
    ![image](../screenshots/service_prinicipal.png)
 2. Automated ML Experiment
 
    The first official step of the project is the creation of an AutoML experiment using a bankmarketing dataset. We wish to predict the success of direct marketing in a banking    context. First we load the dataset into into Azure, then we run an AutoML experiment on the dataset, and finally we have a look at the best model it finds.
+   <pre>
    
+   
+   </pre>
    *Bankmarketing dataset*
    ![image](../screenshots/bankmarketing_dataset.png)
+   <pre>
    
+   
+   </pre>
    *Completed AutoML experiment*
    ![image](../screenshots/bankmarketing_data_automl.png)
+   <pre>
    
+   
+   </pre>
    *Best model*
    ![image](../screenshots/best_model.png)
 3. Deploy the best model
