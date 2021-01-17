@@ -50,9 +50,35 @@ This repository includes an implementation the second project of the Udacity cou
    ![image](../screenshots/endpoint.png)
    <br></br>
    
-   *Apache  Benchmark*
+   *Apache Benchmark*
    ![image](../screenshots/apache_bench.png)
 7. Create and publish a pipeline
+
+   In the final step of our project we create a pipeline aith a single AutoML step that takes the bankmarketing dataset as its input. We then publish this piepline and run it      from its REST endpoint.
+   
+   *Pipeline*
+   ![image](../screenshots/pipeline.png)
+   <br></br>
+   
+   *Pipeline endpoint*
+   ![image](../screenshots/pipeline_end_point.png)
+   <br></br>
+   
+   *Bankmarketing dataset with AutoML module (graphical representation of pipeline run)*
+   ![image](../screenshots/bankmarketing_data_automl.png)
+   <br></br>
+   
+   *Published pipeline overview*
+   ![image](../screenshots/published_pipeline_overview.png)
+   <br></br>
+   
+   *RunDetails widget in Jupyter notebook*
+   ![image](../screenshots/run_details.png)
+   <br></br>
+   
+   *Published pipeline run*
+   ![image](../screenshots/pipeline_rest_end_point_run.png)
+   <br></br>
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
