@@ -10,14 +10,12 @@ This repository includes an implementation the second project of the Udacity cou
 1. Authentication
    
    Since the project is implemented on a personal Azure account, we can include an  automated authentication step by creating of a service principal. This is an isolated step      that is not used in the remainder of the project.
-   <br></br>
    
    *Creation of the service principal*
    ![image](../screenshots/service_prinicipal.png)
 2. Automated ML Experiment
 
    The first official step of the project is the creation of an AutoML experiment using a bankmarketing dataset. We wish to predict the success of direct marketing in a banking    context. First we load the dataset into into Azure, then we run an AutoML experiment on the dataset, and finally we have a look at the best model it finds.
-   <br></br>
    
    *Bankmarketing dataset*
    ![image](../screenshots/bankmarketing_dataset.png)
@@ -35,22 +33,29 @@ This repository includes an implementation the second project of the Udacity cou
 4. Enable logging
 
    We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](../logs.py).
-   <br></br>
    
    *Logs*
    ![image](../screenshots/logs.png)
 5. Swagger Documentation
 
    We now consume the model endpoint with Swagger to generate documentation on its usage.
-   <br></br>
    
    *Swagger running on localhost*
    ![image](../screenshots/swagger.png)
 6. Consume model endpoints
+
+   Now that we know how to interact with th model endpoint, we can use it to make a prediction. This is done in in the script [endpoint.py](../endpoint.py). We also test the        performance of the model enpoint using Apache Benchmark (see also [benchmark.sh](../benchmark.sh)). 
+   
+   *Running endpoint.py*
+   ![image](../screenshots/endpoint.png)
+   <br></br>
+   
+   *Apache  Benchmark*
+   ![image](../screenshots/apache_bench.png)
 7. Create and publish a pipeline
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+All the optional work has been mentioned in Key Steps under 1. Authentication and 6. Comsume Endpoints. 
