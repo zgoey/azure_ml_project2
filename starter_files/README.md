@@ -82,7 +82,7 @@ This repository includes an implementation the second project of the Udacity cou
    <br></br>
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+A screencast describing this project can be found under: https://youtu.be/Dcg2eFTvSH0.
 
 ## Standout Suggestions
 All the optional work has been mentioned in Key Steps under 1. Authentication and 6. Comsume Endpoints. 
