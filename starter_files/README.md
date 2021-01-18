@@ -1,16 +1,19 @@
 # Operationalizing machine learning
 
-This repository includes an implementation the second project of the Udacity course *Machine Learning with Microsoft Azure*. It demonstrates various aspects of operationalizing a machine learning model, including automated Azure authentication, deployment and logging of an AutoML model, documentation and consumption of a model endpoint and the creation and deployment of machine learning pipelines.
+This repository contains an implementation the second project of the Udacity course *Machine Learning with Microsoft Azure*. It demonstrates various aspects of operationalizing a machine learning model, including automated Azure authentication, deployment and logging of an AutoML model, documentation and consumption of a model endpoint and the creation and deployment of machine learning pipelines.
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+The project can roughly be divided in three stages:
+1. Automated authentication (carried out as an optional isolated step)
+2. Best model generation using AutoML  + consecutive deployment, documentation generation, benchmarking and consumption
+3. Pipeline construction, run execution and deployment. 
+These three stages are depicted in the diagram below.
 ![image](../architecture/architecture.svg)
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 1. Authentication
    
-   Since the project is implemented on a personal Azure account, we can include an  automated authentication step by creating of a service principal. This is an isolated step      that is not used in the remainder of the project.
+   Since the project is implemented on a personal Azure account, we can include an automated authentication step by creating of a service principal. This is an isolated step        that is not used in the remainder of the project.
    
    *Creation of the service principal*
    ![image](../screenshots/service_prinicipal.png)
@@ -45,7 +48,7 @@ This repository includes an implementation the second project of the Udacity cou
    ![image](../screenshots/swagger.png)
 6. Consume model endpoints
 
-   Now that we know how to interact with th model endpoint, we can use it to make a prediction. This is done in in the script [endpoint.py](../endpoint.py). We also test the        performance of the model enpoint using Apache Benchmark (see also [benchmark.sh](../benchmark.sh)). 
+   Now that we know how to interact with the model endpoint, we can use it to make predictions. This is done in in the script [endpoint.py](../endpoint.py). We also test the        performance of the model enpoint using Apache Benchmark (see also [benchmark.sh](../benchmark.sh)). 
    
    *Running endpoint.py*
    ![image](../screenshots/endpoint.png)
@@ -55,7 +58,7 @@ This repository includes an implementation the second project of the Udacity cou
    ![image](../screenshots/apache_bench.png)
 7. Create and publish a pipeline
 
-   In the final step of our project we create a pipeline aith a single AutoML step that takes the bankmarketing dataset as its input. We then publish this piepline and run it      from its REST endpoint.
+   In the final step of our project we create a pipeline with a single AutoML step that takes the bankmarketing dataset as its input. We then publish this pipeline and run it      from its REST endpoint.
    
    *Pipeline*
    ![image](../screenshots/pipeline.png)
@@ -85,4 +88,4 @@ This repository includes an implementation the second project of the Udacity cou
 A screencast describing this project can be found under: https://youtu.be/Dcg2eFTvSH0.
 
 ## Standout Suggestions
-All the optional work has been mentioned in Key Steps under 1. Authentication and 6. Comsume Endpoints. 
+All the optional work has been mentioned in the Key Steps section under 1. Authentication and 6. Comsume Endpoints. 
