@@ -94,7 +94,7 @@ The diagram below depicts these three stages and their consecutive steps.
 A screencast describing this project can be found under: https://youtu.be/Dcg2eFTvSH0.
 
 ## Standout Suggestions
-All the suggested optional work that we carried out has been mentioned in the Key Steps section(see 1. Authentication and 6. Consume Endpoints). 
+All the suggested optional work that we carried out has been mentioned in the Key Steps section (see list items 1. Authentication and 6. Consume Endpoints). 
 
 ## Possible Improvements
 To enhance the project even further the following ideas could be considered:
