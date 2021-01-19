@@ -94,7 +94,10 @@ The diagram below depicts these three stages and their consecutive steps.
 A screencast describing this project can be found under: https://youtu.be/Dcg2eFTvSH0.
 
 ## Standout Suggestions
-All the suggested optional work that we carried out has been mentioned in the Key Steps section under the list items  1. Authentication and 6. Consume Endpoints. Further improvements could include:
+All the suggested optional work that we carried out has been mentioned in the Key Steps section(see 1. Authentication and 6. Consume Endpoints). 
+
+## Possible Improvements
+To enhance the project even further the following ideas could be considered:
 - using the service principal for authentication in the project (instead of interactive authentication),
 - generating a better model by running AutoML for a longer time,
 - implementing interaction with the model through a proper UI.
