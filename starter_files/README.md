@@ -1,13 +1,15 @@
 # Operationalizing machine learning
 
-This repository contains an implementation the second project of the Udacity course *Machine Learning with Microsoft Azure*. It demonstrates various aspects of operationalizing a machine learning model, including automated Azure authentication, deployment and logging of an AutoML model, documentation and consumption of a model endpoint and the creation and deployment of machine learning pipelines.
+This repository contains an implementation of the second project of the Udacity course *Machine Learning with Microsoft Azure*. It demonstrates various aspects of operationalizing a machine learning model, including automated Azure authentication, deployment and logging of an AutoML model, documentation and consumption of a model endpoint and the creation and deployment of machine learning pipelines.
 
 ## Architectural Diagram
 The project can roughly be divided in three stages:
 1. Automated authentication (carried out as an optional isolated step)
 2. Best model generation using AutoML  + consecutive deployment, documentation generation, benchmarking and consumption
 3. Pipeline construction, run execution and deployment. 
-These three stages are depicted in the diagram below.
+
+The diagram below depicts these three stages and their consecutive steps.
+
 ![image](../architecture/architecture.svg)
 
 ## Key Steps
@@ -36,7 +38,7 @@ These three stages are depicted in the diagram below.
    We now deploy the best model AutoML has found using a Azure Container Instance. We enable authentication.
 4. Enable logging
 
-   We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](../logs.py).
+   We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](./logs.py).
    
    *Logs*
    ![image](../screenshots/logs.png)
@@ -48,7 +50,7 @@ These three stages are depicted in the diagram below.
    ![image](../screenshots/swagger.png)
 6. Consume model endpoints
 
-   Now that we know how to interact with the model endpoint, we can use it to make predictions. This is done in in the script [endpoint.py](../endpoint.py). We also test the        performance of the model enpoint using Apache Benchmark (see also [benchmark.sh](../benchmark.sh)). 
+   Now that we know how to interact with the model endpoint, we can use it to make predictions. This is done in in the script [endpoint.py](./endpoint.py). We also test the        performance of the model enpoint using Apache Benchmark (see also [benchmark.sh](./benchmark.sh)). 
    
    *Running endpoint.py*
    ![image](../screenshots/endpoint.png)
@@ -88,7 +90,7 @@ These three stages are depicted in the diagram below.
 A screencast describing this project can be found under: https://youtu.be/Dcg2eFTvSH0.
 
 ## Standout Suggestions
-All the suggested optional work that we carried out has been mentioned in the Key Steps section under 1. Authentication and 6. Consume Endpoints. Further improvements could include:
-- using the service principal for authentication in the project (instead of interactive authentication)
-- generating a better model by running AutoML for a longer time
-- implementing interaction with the model through a proper UI
+All the suggested optional work that we carried out has been mentioned in the Key Steps section under the list items  1. Authentication and 6. Consume Endpoints. Further improvements could include:
+- using the service principal for authentication in the project (instead of interactive authentication),
+- generating a better model by running AutoML for a longer time,
+- implementing interaction with the model through a proper UI.
