@@ -9,6 +9,7 @@ The project can roughly be divided in three stages:
 3. Pipeline construction, run execution and deployment. 
 
 The diagram below depicts these three stages and their consecutive steps.
+<br></br>
 
 ![image](../architecture/architecture.svg)
 
@@ -39,6 +40,9 @@ The diagram below depicts these three stages and their consecutive steps.
 4. Enable logging
 
    We also enable Application Insights to generate logs. We then view these logs by running the Python script [logs.py](./logs.py).
+   
+   *Application Insights enabled*
+   ![image](../screenshots/application_insights.png)
    
    *Logs*
    ![image](../screenshots/logs.png)
